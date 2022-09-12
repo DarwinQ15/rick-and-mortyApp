@@ -4,6 +4,7 @@ import './App.css'
 import axios from 'axios'
 import ResidentItem from './components/ResidentItem'
 import InfoResident from './components/InfoResident'
+import Footer from './components/Footer'
 
 function App() {
   const [character, setCharacter] = useState({});
@@ -56,6 +57,7 @@ function App() {
         ))
       }  
       </ul>
+      <Footer />
     </div>
   )
 }

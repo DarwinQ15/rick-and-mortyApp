@@ -11,7 +11,7 @@ const ResidentItem = ({character}) => {
                 image: res.data.image,
                 name: res.data.name,
                 status: res.data.status,
-                specie: res.data.especie,
+                species: res.data.species,
                 origin: res.data.origin.name,
                 episodes: res.data.episode.length
             }))
@@ -26,7 +26,7 @@ const ResidentItem = ({character}) => {
     },[character, residents.status])
             
 
-    // console.log(residents);     
+//    console.log(residents);     
 
     return (
         <li className='character-item'>
@@ -37,7 +37,7 @@ const ResidentItem = ({character}) => {
                 </div>
                 <h3>{residents.name}</h3>
                 <hr />
-                <h3 className='title-info'>Especie <small>{residents.specie}</small></h3>
+                <h3 className='title-info'>Especie <small>{residents.species}</small></h3>
                 <h3 className='title-info'>Origin <small>{residents.origin}</small></h3>
                 <h3 className='title-info'>episodes where appear <small>{residents.episodes}</small></h3>
             </div>

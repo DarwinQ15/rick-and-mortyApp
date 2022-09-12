@@ -7,7 +7,11 @@
     margin: 0;
     padding: 0;
   }
-  
+
+  .icon{
+    background-repeat: no-repeat;
+  }
+
   .App {
     position: relative;
     margin: 0 auto;
@@ -26,6 +30,7 @@
     position: absolute;
     background-color: transparent;
     font-size: 46px;
+    color: #E89343ff;
   }
 
   .info-resident{
@@ -65,18 +70,23 @@
     position: relative;
     width: 100%;
     height: 40px;
-    border: 0;
+    border: solid #526e2dff;
+    border-radius: 10px;
     text-align: center;
-    color: white;
+    color: #526e2dff;
     font-weight: 600;
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
-  }
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
 
   button{
-    color: white;
+    color: #526e2dff;
     position: absolute;
     right: 0;
-    border: 1px solid white;
+    border: 1px solid #526e2dff;
     width: 80px;
     height: 40px;
     border-radius: .5rem;
@@ -161,6 +171,10 @@ h3{
     font-size: 15px;
 }
 
+span{
+  color: #526e2dff;
+}
+
 hr{
     border-width: .1px;
 }
@@ -176,7 +190,31 @@ hr{
 small{
     color: white;
 }
-  
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 30px;
+  background: #252525;
+  height: 160px;
+}
+
+.footer-info{
+  font-size: 36px;
+  font-family: 'Pangolin', 'Times New Roman', Times, serif;
+  color: #526e2dff;
+  padding-bottom: 10px;
+  background-color: #252525;
+}
+
+.footer-creator{
+  font-size: 25px;
+  color: #E89343ff;
+  background-color: #252525;
+  font-family: 'Pangolin', 'Times New Roman', Times, serif;
+}
   
   @media (min-width: 558px) {
     .character-item {
