@@ -26,7 +26,7 @@ const ResidentItem = ({character}) => {
     },[character, residents.status])
             
 
-//    console.log(residents);     
+console.log(residents);     
 
     return (
         <li className='character-item'>

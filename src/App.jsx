@@ -19,7 +19,8 @@ function App() {
         name: res.data.name,
         type: res.data.type,
         dimension: res.data.dimension,
-        population: res.data.residents.length
+        population: res.data.residents.length,
+        residents: res.data.residents
       });
     });
   },[])
@@ -43,7 +44,7 @@ function App() {
       </div>
       <div className='info-search'>
         <input type="text" value={location} placeholder="Type a location id" onChange={e => setLocation(e.target.value)}/>
-        <button onClick={searchTypeLocation}>Search</button>
+        <button onClick={searchTypeLocation}><i class='bx bx-search'></i></button>
       </div>
         <InfoResident name={character.name} type={character.type} dimension={character.dimension} population={character.population} key={character} />
       <h3 className='title-resident-principal'>Residents</h3>
