@@ -29,12 +29,8 @@
     font-family: 'Pangolin', 'Times New Roman', Times, serif;
     position: absolute;
     background-color: transparent;
-  }
-
-  .info-banner{
-    width: 50%;
-    background-color: transparent;
-    display: flex;
+    font-size: 36px;
+    color: #E89343ff;
   }
 
   .info-resident{
@@ -277,13 +273,13 @@ small{
       width: 70%;
     }
 
-    .info-banner{
-      width: 40%;
-    }
-
     .info-flex-resident{
       flex-direction: row;
       justify-content: space-around;
+    }
+
+    .title-banner{
+      font-size: 45px;
     }
   }
   
@@ -299,9 +295,9 @@ small{
       width: 80%;
     }
 
-  .info-banner{
-    width: 37%;
-  }
+    .title-banner{
+      font-size: 50px;
+    }
 
   }
   
@@ -316,7 +312,7 @@ small{
       width: 70%;
     }
 
-    .info-banner{
-      width: 35%;
+    .title-banner{
+      font-size: 60px;
     }
   }

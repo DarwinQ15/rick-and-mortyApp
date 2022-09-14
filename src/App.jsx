@@ -43,7 +43,7 @@ function App() {
   return (
     <div className="App">
       <div className='banner'>
-        <h1 className='title-banner'><img src="./src/img/copiarick.png" alt="" className="info-banner" /></h1>
+        <h1 className='title-banner'>Rick and Morty</h1>
       </div>
       <div className='info-search'>
         <input type="text" value={location} placeholder="Type a location id" onChange={e => setLocation(e.target.value)}/>
