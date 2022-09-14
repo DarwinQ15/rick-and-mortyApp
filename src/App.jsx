@@ -30,17 +30,20 @@ function App() {
   
   const searchTypeLocation=()=>{
     axios.get(`https://rickandmortyapi.com/api/location/${location}`)
-    .then(res => setCharacter(res.data))
+    .then(res => setCharacter({
+      name: res.data.name,
+      type: res.data.type,
+      dimension: res.data.dimension,
+      population: res.data.residents.length,
+      residents: res.data.residents
+    }))
   }
 
   // console.log(location);
-
-  console.log(character);
-
   return (
     <div className="App">
       <div className='banner'>
-        <h1 className='title-banner'>Rick and Morty</h1>
+        <h1 className='title-banner'><img src="./src/img/copiarick.png" alt="" className="info-banner" /></h1>
       </div>
       <div className='info-search'>
         <input type="text" value={location} placeholder="Type a location id" onChange={e => setLocation(e.target.value)}/>
